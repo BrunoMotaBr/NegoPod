@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Obter o nome do produto a partir da URL
+        const nomeDoProduto = getQueryParam('nomeDoProduto');
+
+        // Atualizar a página com o nome do produto
+        const productNameElement = document.getElementById('productName');
+        if (nomeDoProduto) {
+            productNameElement.textContent = nomeDoProduto;
+            console.log(nomeDoProduto)
+        } else {
+            productNameElement.textContent = 'Produto não encontrado';
+        }
+    </script>
+    <title>Pod - </title>
+</head>
+<body>
+    <div class="cabecalho-informacoes">
+        <div>
+            <a>(11) 99999-9999</a>
+            <img src="/imagens/whatsapp.svg" alt="" srcset="">
+        </div>
+        <div>
+            <a>NegoPod</a>
+            <img src="/imagens/instagram.svg" alt="" srcset="">
+        </div>
+        <div>
+            <a>Rastrear meu pedido</a>
+            <img src="/imagens/envio-rapido.svg" alt="" srcset="">
+        </div>
+    </div>
+    <header id="cabecalho" class="cabecalho">
+        <a>
+            <img src="/imagens/logorockstar4.png" alt="">
+        </a>
+        <div>
+            <input type="search" name="" id="" placeholder="O que você procura?">
+            <button class="cabecalho-botao-search"><img src="/imagens/cabeca-de-visao.svg" alt="search"></button>
+        </div>
+        <nav class="roboto-regular">
+            <a>
+                Entre ou Cadastre-se
+            </a>
+            <a>
+                <img src="/imagens/coracao.png" alt="">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="card" id="card">
+
+            </div>
+        </section>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

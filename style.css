@@ -1,0 +1,24 @@
+@import url("/Css/fonte.css");
+@import url("/Css/cabecalho.css");
+@import url("/Css/banner.css");
+@import url("/Css/cards.css");
+@import url("/Css/rodape.css");
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    ---cor-principal: #705696;
+    ---branco: #FFFFFF;
+    ---cor-secundaria: #896AA9;
+    ---cor-terciaria: #57457D; 
+    ---verde-claro: #96B670;
+    ---cor-destaque: #E6A8E0;
+    ---preto: #000000;
+}
+
+body{
+    background-color: #F2F2F2;
+}
